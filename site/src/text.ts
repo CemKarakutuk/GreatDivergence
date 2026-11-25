@@ -68,10 +68,10 @@ export const TEXT = {
    ]
   ],
   "scaleNote": "Counted on the daily grid, January 2000 – November 2026, days with a value only. Pairs and combinations are calculations the local version can run, not stored results.",
+  "headline": [["31.4×", "Liquidated-fund basket relative to the BIST 100 total return index on 15 Sep 2026, both rebased to the same level on 2 Jan 2025."], ["−96.3%", "Fall of the basket from that peak to 4 Nov 2026."]],
+  "fit": "Fit to window", "actual": "Actual size",
   "findingsTitle": "Findings",
   "findings": [
-   "Largest divergence on 15 Sep 2026: the liquidated-fund basket stood at 31.4 times the BIST 100 total return index (base 2 Jan 2025).",
-   "From that peak to 4 Nov 2026 the basket fell 96.3%.",
    "Results depend on how the basket is defined. From 10 Sep 2025 to 2 Sep 2026 the ex-post basket returned 748%, the point-in-time top 10 163% and BIST 100 35%. The baskets differ in members, weights and KAP coverage; the gap is a sensitivity to the definition, not a measure of selection bias.",
    "Structural breaks: in the mean on 16 Sep 2026 and in the variance on 17 Sep 2026 (CUSUM p: mean 0.0079, variance < 0.0001).",
    "Correlation with BIST 100 fell from 0.60 (3 Aug – 16 Sep 2026) to 0.08 after the CMB decision (Fisher z, p = 0.010).",
@@ -168,10 +168,10 @@ export const TEXT = {
    ]
   ],
   "scaleNote": "Günlük ızgarada sayıldı, Ocak 2000 – Kasım 2026, yalnız değeri olan günler. Çiftler ve kombinasyonlar yerel sürümün yapabildiği hesaplardır, saklanmış sonuçlar değildir.",
+  "headline": [["31,4 kat", "15 Eylül 2026'da tasfiye fonu sepetinin BIST 100 getiri endeksine oranı; ikisi de 2 Ocak 2025'te aynı baza getirildi."], ["−%96,3", "Sepetin bu zirveden 4 Kasım 2026'ya kadar düşüşü."]],
+  "fit": "Pencereye sığdır", "actual": "Gerçek boyut",
   "findingsTitle": "Bulgular",
   "findings": [
-   "En büyük ayrışma 15 Eylül 2026'da: tasfiye fonu sepeti BIST 100 getiri endeksinin 31,4 katına ulaştı (baz 2 Ocak 2025).",
-   "Bu zirveden 4 Kasım 2026'ya kadar sepet %96,3 düştü.",
    "Sonuç sepetin nasıl tanımlandığına bağlı. 10 Eylül 2025 – 2 Eylül 2026 arasında ex-post sepet %748, PIT ilk 10 %163, BIST 100 %35 getirdi. Sepetlerin üyeleri, ağırlıkları ve KAP kapsamı farklı; aradaki fark tanıma duyarlılıktır, seçim yanlılığının ölçüsü değildir.",
    "Yapısal kırılmalar: ortalamada 16 Eylül 2026, varyansta 17 Eylül 2026 (CUSUM p: ortalama 0,0079, varyans < 0,0001).",
    "BIST 100 ile korelasyon 0,60'tan (3 Ağustos – 16 Eylül 2026) SPK kararından sonra 0,08'e indi (Fisher z, p = 0,010).",

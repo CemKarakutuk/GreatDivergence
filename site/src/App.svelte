@@ -30,7 +30,8 @@
   fetch('./catalog.json').then(r => (r.ok ? r.json() : null)).then(x => (cat = x)).catch(() => {})
   fetch('./controls.json').then(r => (r.ok ? r.json() : {})).then(x => (ctl = x)).catch(() => {})
 
-  let big = $state<Item | null>(null)
+  let big = $state<Item | null>(null), full = $state(false)
+  const open = (it: Item) => { full = false; big = it }
   let menu = $state(false)
   addEventListener('keydown', e => { if (e.key === 'Escape') big = null })
 </script>
@@ -50,12 +51,29 @@
   </div>
 </header>
 
+{#snippet figure(it: Item)}
+  {@const s = shot(it)}
+  <figure class="card">
+    <figcaption class="head"><h2>{s.title}</h2><span class="badge">{it.label === 'synthetic' ? T.demoSynth : T.demoReal}</span></figcaption>
+    <button type="button" class="imgbtn" onclick={() => open(it)} aria-label={T.open}><img src="./demo/{s.file}" alt={s.title} loading="lazy" /></button>
+    <p class="hint">{s.caption}</p>
+    <p class="acts"><button type="button" class="link" onclick={() => open(it)}>{T.open}</button> · <a href="./demo/{s.file}" download={s.file}>{T.download}</a></p>
+  </figure>
+{/snippet}
+
 <main>
   <h1>{page === 'overview' ? 'Great Divergence' : T.nav[page]}</h1>
   <p class="lead">{T.intro[page]}</p>
   {#if cat && ctl[page]}<Controls {page} {lang} {cat} {ctl} />{/if}
 
   {#if page === 'overview'}
+    <!-- the result in one view: the two headline numbers and the main chart first, the reference tables below -->
+    <section class="hero">
+      <div class="stats">
+        {#each T.headline as h}<div class="stat card"><span class="big">{h[0]}</span><span class="what">{h[1]}</span></div>{/each}
+      </div>
+      {#each shots as it (it.id)}{@render figure(it)}{/each}
+    </section>
     <p class="note">{T.note}</p>
     <div class="grid2">
       <section class="card">
@@ -89,19 +107,9 @@
     </section>
   {/if}
 
-  {#if page !== 'methods'}
+  {#if page !== 'methods' && page !== 'overview'}
     <div class="gallery">
-      {#each shots as it (it.id)}
-        {@const s = shot(it)}
-        <figure class="card">
-          <figcaption class="head"><h2>{s.title}</h2><span class="badge">{it.label === 'synthetic' ? T.demoSynth : T.demoReal}</span></figcaption>
-          <button type="button" class="imgbtn" onclick={() => (big = it)} aria-label={T.open}><img src="./demo/{s.file}" alt={s.title} loading="lazy" /></button>
-          <p class="hint">{s.caption}</p>
-          <p class="acts"><button type="button" class="link" onclick={() => (big = it)}>{T.open}</button> · <a href="./demo/{s.file}" download={s.file}>{T.download}</a></p>
-        </figure>
-      {:else}
-        <div class="slot card">{T.slot}</div>
-      {/each}
+      {#each shots as it (it.id)}{@render figure(it)}{:else}<div class="slot card">{T.slot}</div>{/each}
     </div>
   {/if}
 </main>
@@ -115,8 +123,9 @@
   {@const s = shot(big)}
   <div class="lightbox" role="dialog" aria-modal="true" aria-label={s.title} tabindex="-1" onclick={e => { if (e.target === e.currentTarget) big = null }} onkeydown={() => {}}>
     <div class="box">
-      <div class="bar"><strong>{s.title}</strong><span><a href="./demo/{s.file}" download={s.file}>{T.download}</a> <button type="button" onclick={() => (big = null)}>{T.close}</button></span></div>
-      <div class="scroll"><img src="./demo/{s.file}" alt={s.title} /></div>
+      <div class="bar"><strong>{s.title}</strong><span><button type="button" onclick={() => (full = !full)}>{full ? T.fit : T.actual}</button> <a href="./demo/{s.file}" download={s.file}>{T.download}</a> <button type="button" onclick={() => (big = null)}>{T.close}</button></span></div>
+      <!-- opens fitted to the window (axes and peak in one view); actual size scrolls -->
+      <div class="scroll" class:full><button type="button" class="imgbtn" onclick={() => (full = !full)} aria-label={full ? T.fit : T.actual}><img src="./demo/{s.file}" alt={s.title} /></button></div>
       <p class="hint">{big.label === 'synthetic' ? T.demoSynth : T.demoReal} · {s.caption}</p>
     </div>
   </div>
@@ -153,8 +162,18 @@
   .lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(15, 23, 42, 0.72); display: flex; align-items: center; justify-content: center; padding: 16px; }
   .box { background: var(--card); border-radius: 12px; padding: 12px; width: min(1800px, 100%); max-height: 100%; display: flex; flex-direction: column; gap: 8px; }
   .bar { display: flex; justify-content: space-between; gap: 10px; align-items: center; flex-wrap: wrap; }
-  .scroll { overflow: auto; }
-  .scroll img { width: auto; max-width: none; min-width: 100%; }
+  .scroll { overflow: auto; display: flex; justify-content: center; min-height: 0; }
+  .scroll .imgbtn { cursor: zoom-in; width: auto; }
+  .scroll img { width: auto; max-width: 100%; max-height: calc(100vh - 150px); object-fit: contain; }
+  .scroll.full { display: block; }
+  .scroll.full .imgbtn { cursor: zoom-out; }
+  .scroll.full img { max-width: none; max-height: none; }
+  .hero { display: grid; grid-template-columns: minmax(220px, 280px) 1fr; gap: 14px; align-items: start; margin-bottom: 4px; }
+  .stats { display: flex; flex-direction: column; gap: 14px; }
+  .stat { display: flex; flex-direction: column; gap: 4px; margin: 0; }
+  .big { font-size: 2.2rem; font-weight: 700; line-height: 1.1; color: var(--accent); font-variant-numeric: tabular-nums; }
+  .what { font-size: 0.88rem; color: var(--text-2); }
+  @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .stats { flex-direction: row; } .stat { flex: 1; } }
   @media (max-width: 1000px) {
     .menu { display: inline-block; margin-left: auto; }
     nav { display: none; flex-basis: 100%; order: 10; flex-direction: column; }
