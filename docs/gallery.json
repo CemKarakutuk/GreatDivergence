@@ -6,14 +6,14 @@
    "tab": "overview",
    "label": "real",
    "en": {
-    "file": "01_Overview_01_performance-relative-to-bist-100-since-2025_en.png",
-    "title": "Performance relative to BIST 100 since 2025",
-    "caption": "2 Jan 2025 – 20 Nov 2026 · Performance relative to BIST 100 since 2025 · BIST 100 (total return) · TRY, daily · Source: local v3 engine, database 2026-11-25"
+    "file": "01_Overview_01_performance-relative-to-bist-100-since-august-2024_en.png",
+    "title": "Performance relative to BIST 100 since August 2024",
+    "caption": "1 Aug 2024 – 20 Nov 2026 · Performance relative to BIST 100 since August 2024 · BIST 100 (total return) · TRY, daily · Source: local v3 engine, database 2026-11-25"
    },
    "tr": {
-    "file": "01_Overview_01_2025-ten-bu-yana-bist-100-e-gore-performans_tr.png",
-    "title": "2025'ten bu yana BIST 100'e göre performans",
-    "caption": "2 Oca 2025 – 20 Kas 2026 · 2025'ten bu yana BIST 100'e göre performans · BIST 100 (getiri) · TL, günlük · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+    "file": "01_Overview_01_agustos-2024-ten-bu-yana-bist-100-e-gore-performan_tr.png",
+    "title": "Ağustos 2024'ten bu yana BIST 100'e göre performans",
+    "caption": "1 Ağu 2024 – 20 Kas 2026 · Ağustos 2024'ten bu yana BIST 100'e göre performans · BIST 100 (getiri) · TL, günlük · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
    }
   },
   {

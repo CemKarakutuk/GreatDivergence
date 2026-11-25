@@ -121,7 +121,7 @@
   .chip, .tag { border: 1px solid var(--line); border-radius: 999px; padding: 2px 10px; font-size: 0.84rem; background: var(--bg-2); }
   .tag { font-size: 0.78rem; }
   .add { border-radius: 999px; font-size: 0.82rem; }
-  .panel { position: absolute; z-index: 30; left: 0; top: 100%; margin-top: 6px; width: min(720px, 92vw); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18); }
+  .panel { position: absolute; z-index: 30; left: 0; top: 100%; margin-top: 6px; width: min(720px, 92cqw); background: var(--card); border: 1px solid var(--line); border-radius: 10px; padding: 10px; box-shadow: 0 10px 30px rgba(15, 23, 42, 0.18); }
   .tabs { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
   .tabs button { font-size: 0.8rem; padding: 3px 8px; }
   .tabs button.on { background: var(--accent); color: var(--on-accent); border-color: var(--accent); }
@@ -139,5 +139,5 @@
   .field { display: inline-flex; align-items: center; }
   .val { border: 1px solid var(--line); border-radius: 6px; padding: 3px 9px; font-size: 0.84rem; background: var(--bg-2); }
   .sm { font-size: 0.82rem; display: inline-flex; gap: 4px; align-items: center; }
-  @media (max-width: 800px) { .row2 { grid-template-columns: 1fr; } }
+  @container app (max-width: 800px) { .row2 { grid-template-columns: 1fr; } }
 </style>

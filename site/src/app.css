@@ -35,6 +35,6 @@ td.n, th.n { text-align: right; font-variant-numeric: tabular-nums; }
 .card { min-width: 0; }
 .tablewrap { overflow-x: auto; max-width: 100%; }
 select, input[type='date'], input[type='month'] { max-width: 100%; }
-@media (max-width: 900px) { .grid2 { grid-template-columns: 1fr; } }
+@container app (max-width: 900px) { .grid2 { grid-template-columns: 1fr; } }
 .badge { display: inline-block; font-size: 0.72rem; font-weight: 600; border: 1px solid currentColor; border-radius: 4px; padding: 0 6px; margin-right: 6px; }
 .badge.desc { color: #2563eb; } .badge.test { color: #15803d; } .badge.expl { color: #b45309; }

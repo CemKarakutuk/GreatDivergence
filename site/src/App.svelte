@@ -30,12 +30,17 @@
   fetch('./catalog.json').then(r => (r.ok ? r.json() : null)).then(x => (cat = x)).catch(() => {})
   fetch('./controls.json').then(r => (r.ok ? r.json() : {})).then(x => (ctl = x)).catch(() => {})
 
+  // page scale ≈ 150 % (three zoom steps in Safari); on narrower windows less, so the layout keeps at least ~900 px
+  const scale = () => { const z = Math.min(1.5, Math.max(1, innerWidth / 900)); document.documentElement.style.zoom = String(z); document.documentElement.style.setProperty('--z', String(z)) }
+  scale(); addEventListener('resize', scale)
+
   let big = $state<Item | null>(null), full = $state(false)
   const open = (it: Item) => { full = false; big = it }
   let menu = $state(false)
   addEventListener('keydown', e => { if (e.key === 'Escape') big = null })
 </script>
 
+<div class="app">
 <header class="top">
   <a class="brand" href="#/overview">Great Divergence</a>
   <button class="menu" type="button" aria-expanded={menu} onclick={() => (menu = !menu)}>☰</button>
@@ -119,6 +124,8 @@
   <span>{T.disclaimer}</span>
 </footer>
 
+</div>
+
 {#if big}
   {@const s = shot(big)}
   <div class="lightbox" role="dialog" aria-modal="true" aria-label={s.title} tabindex="-1" onclick={e => { if (e.target === e.currentTarget) big = null }} onkeydown={() => {}}>
@@ -151,7 +158,9 @@
   tr.sub td:first-child { padding-left: 18px; color: var(--text-2); }
   td.nw { white-space: nowrap; }
   .gallery { display: grid; grid-template-columns: 1fr; gap: 14px; }
-  @media (min-width: 1300px) { .gallery { grid-template-columns: 1fr 1fr; } }
+  /* layout follows the scaled page width (container queries), as with browser zoom */
+  .app { container: app / inline-size; }
+  @container app (min-width: 1300px) { .gallery { grid-template-columns: 1fr 1fr; } }
   figure { margin: 0; }
   .head { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; flex-wrap: wrap; }
   .badge { font-size: 0.72rem; color: var(--text-2); border: 1px solid var(--line); border-radius: 999px; padding: 1px 8px; white-space: nowrap; }
@@ -159,12 +168,12 @@
   .imgbtn img, .scroll img { display: block; width: 100%; height: auto; border-radius: 6px; }
   .acts { font-size: 0.82rem; margin: 2px 0 0; }
   .slot { border-style: dashed; color: var(--text-2); text-align: center; padding: 48px 16px; }
-  .lightbox { position: fixed; inset: 0; z-index: 100; background: rgba(15, 23, 42, 0.72); display: flex; align-items: center; justify-content: center; padding: 16px; }
+  .lightbox { position: fixed; inset: 0; height: calc(100vh / var(--z, 1)); z-index: 100; background: rgba(15, 23, 42, 0.72); display: flex; align-items: center; justify-content: center; padding: 16px; }
   .box { background: var(--card); border-radius: 12px; padding: 12px; width: min(1800px, 100%); max-height: 100%; display: flex; flex-direction: column; gap: 8px; }
   .bar { display: flex; justify-content: space-between; gap: 10px; align-items: center; flex-wrap: wrap; }
   .scroll { overflow: auto; display: flex; justify-content: center; min-height: 0; }
   .scroll .imgbtn { cursor: zoom-in; width: auto; }
-  .scroll img { width: auto; max-width: 100%; max-height: calc(100vh - 150px); object-fit: contain; }
+  .scroll img { width: auto; max-width: 100%; max-height: calc(100vh / var(--z, 1) - 150px); object-fit: contain; }
   .scroll.full { display: block; }
   .scroll.full .imgbtn { cursor: zoom-out; }
   .scroll.full img { max-width: none; max-height: none; }
@@ -173,8 +182,8 @@
   .stat { display: flex; flex-direction: column; gap: 4px; margin: 0; }
   .big { font-size: 2.2rem; font-weight: 700; line-height: 1.1; color: var(--accent); font-variant-numeric: tabular-nums; }
   .what { font-size: 0.88rem; color: var(--text-2); }
-  @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } .stats { flex-direction: row; } .stat { flex: 1; } }
-  @media (max-width: 1000px) {
+  @container app (max-width: 900px) { .hero { grid-template-columns: 1fr; } .stats { flex-direction: row; } .stat { flex: 1; } }
+  @container app (max-width: 760px) {
     .menu { display: inline-block; margin-left: auto; }
     nav { display: none; flex-basis: 100%; order: 10; flex-direction: column; }
     nav.open { display: flex; }

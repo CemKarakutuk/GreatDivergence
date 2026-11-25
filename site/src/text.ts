@@ -68,7 +68,7 @@ export const TEXT = {
    ]
   ],
   "scaleNote": "Counted on the daily grid, January 2000 – November 2026, days with a value only. Pairs and combinations are calculations the local version can run, not stored results.",
-  "headline": [["31.4×", "Liquidated-fund basket relative to the BIST 100 total return index on 15 Sep 2026, both rebased to the same level on 2 Jan 2025."], ["−96.3%", "Fall of the basket from that peak to 4 Nov 2026."]],
+  "headline": [["40.9×", "Liquidated-fund basket relative to the BIST 100 total return index on 15 Sep 2026, both rebased on 1 Aug 2024 (31.4× with the M4 base of 2 Jan 2025)."], ["−96.3%", "Fall of the basket from that peak to 4 Nov 2026."], ["Aug 2024", "Start of the divergence: in the Lab's monthly matrix (USD, vs BIST 30 total return) the basket's excess return is positive month after month from August 2024 (+6.6%, +7.2%, +8.7% in August–October)."]],
   "fit": "Fit to window", "actual": "Actual size",
   "findingsTitle": "Findings",
   "findings": [
@@ -168,7 +168,7 @@ export const TEXT = {
    ]
   ],
   "scaleNote": "Günlük ızgarada sayıldı, Ocak 2000 – Kasım 2026, yalnız değeri olan günler. Çiftler ve kombinasyonlar yerel sürümün yapabildiği hesaplardır, saklanmış sonuçlar değildir.",
-  "headline": [["31,4 kat", "15 Eylül 2026'da tasfiye fonu sepetinin BIST 100 getiri endeksine oranı; ikisi de 2 Ocak 2025'te aynı baza getirildi."], ["−%96,3", "Sepetin bu zirveden 4 Kasım 2026'ya kadar düşüşü."]],
+  "headline": [["40,9 kat", "15 Eylül 2026'da tasfiye fonu sepetinin BIST 100 getiri endeksine oranı; ikisi de 1 Ağustos 2024'te aynı baza getirildi (M4'ün 2 Ocak 2025 bazıyla 31,4 kat)."], ["−%96,3", "Sepetin bu zirveden 4 Kasım 2026'ya kadar düşüşü."], ["Ağustos 2024", "Ayrışmanın başlangıcı: Lab'in aylık matrisinde (USD, BIST 30 getiriye göre) sepetin fazla getirisi Ağustos 2024'ten itibaren art arda pozitif (Ağustos–Ekim: +%6,6, +%7,2, +%8,7)."]],
   "fit": "Pencereye sığdır", "actual": "Gerçek boyut",
   "findingsTitle": "Bulgular",
   "findings": [
