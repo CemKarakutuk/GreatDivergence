@@ -60,7 +60,11 @@
     <div class="grid2">
       <section class="card">
         <h2>{T.coverageTitle}</h2>
-        <p>{T.coverage}</p>
+        <table>
+          <thead><tr>{#each T.coverageHead as h, i}<th class:n={i === 1}>{h}</th>{/each}</tr></thead>
+          <tbody>{#each T.coverageRows as r}<tr><td>{r[0]}</td><td class="n nw">{r[1]}</td><td class="nw">{r[2]}</td><td class="nw">{r[3]}</td></tr>{/each}</tbody>
+        </table>
+        <p class="hint">{T.coverageNote}</p>
       </section>
       <section class="card">
         <h2>{T.scaleTitle}</h2>
@@ -136,6 +140,7 @@
   .note { max-width: 900px; margin-bottom: 14px; }
   ul { padding-left: 18px; } li { margin: 5px 0; }
   tr.sub td:first-child { padding-left: 18px; color: var(--text-2); }
+  td.nw { white-space: nowrap; }
   .gallery { display: grid; grid-template-columns: 1fr; gap: 14px; }
   @media (min-width: 1300px) { .gallery { grid-template-columns: 1fr 1fr; } }
   figure { margin: 0; }

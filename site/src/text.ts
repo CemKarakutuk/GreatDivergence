@@ -32,6 +32,9 @@ export const TEXT = {
   "noteTitle": "About this site",
   "note": "The full analysis runs in a local version with its own data archive. Because of data providers' redistribution terms, the archive is not shared on this site. The charts here are fixed demo PNGs taken from the local version. Changing a date, series or benchmark and recalculating is done in the local version.",
   "coverageTitle": "Data coverage",
+  "coverageHead": ["Data", "Count", "From", "To"],
+  "coverageRows": [["Fund baskets", "4 series", "Jan 2005", "Nov 2026"], ["BIST total return indices and sectors", "12 series", "Jul 2018", "Nov 2026"], ["BIST price indices", "12 series", "Jan 2000", "Nov 2026"], ["Own BIST measures", "6 series", "Jan 2005", "Nov 2026"], ["TEFAS fund groups", "4 series", "Nov 2021", "Nov 2026"], ["World (ETF proxies)", "15 series", "Jan 2000", "Nov 2026"], ["FX, rates and macro", "8 series", "Jan 2000", "Nov 2026"], ["BIST stocks (daily prices)", "626 stocks", "Jan 2000", "Nov 2026"], ["TEFAS funds (unit prices)", "2,071 funds", "Nov 2021", "Nov 2026"], ["KAP fund portfolio reports", "230 fund–report periods, 11 funds", "Mar 2020", "Nov 2026"], ["Market P/E (monthly)", "13 markets", "Jan 2000", "Oct 2026"]],
+  "coverageNote": "Start dates differ between series within a group; the table shows the earliest. 626 stocks + 2,071 funds + 61 other series = 2,758 selectable series.",
   "coverage": "The local Explorer holds 626 BIST stocks, 2,071 TEFAS funds and 61 other series. Stock history goes back to 2000 and TEFAS unit prices to November 2021; the start date varies by series. The KAP archive covers 230 fund–report periods for 11 funds, and the monthly P/E panel covers 13 markets.",
   "scaleTitle": "Scale of the local database",
   "scale": [
@@ -129,6 +132,9 @@ export const TEXT = {
   "noteTitle": "Yayın notu",
   "note": "Tam analiz sürümü yerel veri arşiviyle çalışıyor. Veri sağlayıcılarının yeniden dağıtım koşulları nedeniyle arşiv bu sitede paylaşılmıyor. Buradaki grafikler, yerel sürümden alınmış sabit demo PNG'lerdir. Tarih, seri veya referansı değiştirip yeniden hesaplama yerel sürümde yapılır.",
   "coverageTitle": "Veri kapsamı",
+  "coverageHead": ["Veri", "Sayı", "Başlangıç", "Bitiş"],
+  "coverageRows": [["Fon sepetleri", "4 seri", "Oca 2005", "Kas 2026"], ["BIST getiri endeksleri ve sektörler", "12 seri", "Tem 2018", "Kas 2026"], ["BIST fiyat endeksleri", "12 seri", "Oca 2000", "Kas 2026"], ["Kendi BIST ölçülerimiz", "6 seri", "Oca 2005", "Kas 2026"], ["TEFAS fon grupları", "4 seri", "Kas 2021", "Kas 2026"], ["Dünya (ETF vekilleri)", "15 seri", "Oca 2000", "Kas 2026"], ["Kur, faiz ve makro", "8 seri", "Oca 2000", "Kas 2026"], ["BIST hisseleri (günlük fiyat)", "626 hisse", "Oca 2000", "Kas 2026"], ["TEFAS fonları (pay fiyatı)", "2.071 fon", "Kas 2021", "Kas 2026"], ["KAP fon portföy raporları", "230 fon–rapor dönemi, 11 fon", "Mar 2020", "Kas 2026"], ["Piyasa F/K (aylık)", "13 piyasa", "Oca 2000", "Eki 2026"]],
+  "coverageNote": "Bir grubun içinde başlangıç tarihi seriden seriye değişir; tabloda en erkeni var. 626 hisse + 2.071 fon + 61 diğer seri = 2.758 seçilebilir seri.",
   "coverage": "Yerel Explorer'da 626 BIST hissesi, 2.071 TEFAS fonu ve 61 diğer seri bulunuyor. Hisse geçmişi 2000'e, TEFAS pay fiyatları Kasım 2021'e uzanıyor. Başlangıç tarihi seriye göre değişiyor. KAP arşivi 11 fon için 230 fon–rapor dönemini, aylık F/K paneli 13 piyasayı kapsıyor.",
   "scaleTitle": "Yerel veritabanının ölçeği",
   "scale": [
