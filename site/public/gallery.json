@@ -1,0 +1,320 @@
+{
+ "version": 1,
+ "items": [
+  {
+   "id": "01_Overview/01",
+   "tab": "overview",
+   "label": "real",
+   "en": {
+    "file": "01_Overview_01_performance-relative-to-bist-100-since-2025_en.png",
+    "title": "Performance relative to BIST 100 since 2025",
+    "caption": "2 Jan 2025 – 20 Nov 2026 · Performance relative to BIST 100 since 2025 · BIST 100 (total return) · TRY, daily · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "01_Overview_01_2025-ten-bu-yana-bist-100-e-gore-performans_tr.png",
+    "title": "2025'ten bu yana BIST 100'e göre performans",
+    "caption": "2 Oca 2025 – 20 Kas 2026 · 2025'ten bu yana BIST 100'e göre performans · BIST 100 (getiri) · TL, günlük · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "02_Explorer/01",
+   "tab": "explorer",
+   "label": "real",
+   "en": {
+    "file": "02_Explorer_01_relative-performancevs-bist-30-total-return_en.png",
+    "title": "Relative performance vs BIST 30 (total return)",
+    "caption": "8 Jan 2021 – 20 Nov 2026 · Relative performancevs · ref. BIST 30 (total return) · USD, weekly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "02_Explorer_01_goreli-performansbist-30-getiri-karsisinda_tr.png",
+    "title": "Göreli performans · BIST 30 (getiri) karşısında",
+    "caption": "8 Oca 2021 – 20 Kas 2026 · Göreli performans · referans BIST 30 (getiri) · USD, haftalık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "02_Explorer/02",
+   "tab": "explorer",
+   "label": "real",
+   "en": {
+    "file": "02_Explorer_02_index-start-100_en.png",
+    "title": "Index (start = 100)",
+    "caption": "8 Jan 2021 – 20 Nov 2026 · Index (start = 100) · ref. BIST 30 (total return) · USD, weekly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "02_Explorer_02_endeks-baslangic-100_tr.png",
+    "title": "Endeks (başlangıç = 100)",
+    "caption": "8 Oca 2021 – 20 Kas 2026 · Endeks (başlangıç = 100) · referans BIST 30 (getiri) · USD, haftalık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "02_Explorer/03",
+   "tab": "explorer",
+   "label": "real",
+   "en": {
+    "file": "02_Explorer_03_cumulative-return_en.png",
+    "title": "Cumulative return",
+    "caption": "8 Jan 2021 – 20 Nov 2026 · Cumulative return · ref. BIST 30 (total return) · USD, weekly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "02_Explorer_03_kumulatif-getiri_tr.png",
+    "title": "Kümülatif getiri",
+    "caption": "8 Oca 2021 – 20 Kas 2026 · Kümülatif getiri · referans BIST 30 (getiri) · USD, haftalık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "02_Explorer/04",
+   "tab": "explorer",
+   "label": "real",
+   "en": {
+    "file": "02_Explorer_04_rolling-correlationvs-bist-30-total-return_en.png",
+    "title": "Rolling correlation vs BIST 30 (total return)",
+    "caption": "8 Jan 2021 – 20 Nov 2026 · Rolling correlationvs · ref. BIST 30 (total return) · USD, weekly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "02_Explorer_04_kayan-korelasyonbist-30-getiri-karsisinda_tr.png",
+    "title": "Kayan korelasyon · BIST 30 (getiri) karşısında",
+    "caption": "8 Oca 2021 – 20 Kas 2026 · Kayan korelasyon · referans BIST 30 (getiri) · USD, haftalık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "02_Explorer/05",
+   "tab": "explorer",
+   "label": "real",
+   "en": {
+    "file": "02_Explorer_05_rolling-betavs-bist-30-total-return_en.png",
+    "title": "Rolling beta vs BIST 30 (total return)",
+    "caption": "8 Jan 2021 – 20 Nov 2026 · Rolling betavs · ref. BIST 30 (total return) · USD, weekly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "02_Explorer_05_kayan-betabist-30-getiri-karsisinda_tr.png",
+    "title": "Kayan beta · BIST 30 (getiri) karşısında",
+    "caption": "8 Oca 2021 – 20 Kas 2026 · Kayan beta · referans BIST 30 (getiri) · USD, haftalık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "02_Explorer/06",
+   "tab": "explorer",
+   "label": "real",
+   "en": {
+    "file": "02_Explorer_06_rolling-volatility-annualised_en.png",
+    "title": "Rolling volatility (annualised)",
+    "caption": "8 Jan 2021 – 20 Nov 2026 · Rolling volatility (annualised) · ref. BIST 30 (total return) · USD, weekly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "02_Explorer_06_kayan-oynaklik-yillik_tr.png",
+    "title": "Kayan oynaklık (yıllık)",
+    "caption": "8 Oca 2021 – 20 Kas 2026 · Kayan oynaklık (yıllık) · referans BIST 30 (getiri) · USD, haftalık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "02_Explorer/07",
+   "tab": "explorer",
+   "label": "real",
+   "en": {
+    "file": "02_Explorer_07_drawdown-from-peak_en.png",
+    "title": "Drawdown from peak",
+    "caption": "8 Jan 2021 – 20 Nov 2026 · Drawdown from peak · ref. BIST 30 (total return) · USD, weekly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "02_Explorer_07_zirveden-dusus_tr.png",
+    "title": "Zirveden düşüş",
+    "caption": "8 Oca 2021 – 20 Kas 2026 · Zirveden düşüş · referans BIST 30 (getiri) · USD, haftalık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "02_Explorer/08",
+   "tab": "explorer",
+   "label": "real",
+   "en": {
+    "file": "02_Explorer_08_unusualness-rolling-z-vs-bist-30-total-return_en.png",
+    "title": "Unusualness (rolling z) vs BIST 30 (total return)",
+    "caption": "8 Jan 2021 – 20 Nov 2026 · Unusualness (rolling z)vs · ref. BIST 30 (total return) · USD, weekly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "02_Explorer_08_olagandisilik-kayan-z-bist-30-getiri-karsisinda_tr.png",
+    "title": "Olağandışılık (kayan z) · BIST 30 (getiri) karşısında",
+    "caption": "8 Oca 2021 – 20 Kas 2026 · Olağandışılık (kayan z) · referans BIST 30 (getiri) · USD, haftalık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "02_Explorer/09",
+   "tab": "explorer",
+   "label": "real",
+   "en": {
+    "file": "02_Explorer_09_level-as-quoted_en.png",
+    "title": "Level (as quoted)",
+    "caption": "8 Jan 2021 – 20 Nov 2026 · Level (as quoted) · ref. BIST 30 (total return) · USD, weekly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "02_Explorer_09_seviye-kote-edildigi-gibi_tr.png",
+    "title": "Seviye (kote edildiği gibi)",
+    "caption": "8 Oca 2021 – 20 Kas 2026 · Seviye (kote edildiği gibi) · referans BIST 30 (getiri) · USD, haftalık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "03_Baskets/01",
+   "tab": "baskets",
+   "label": "real",
+   "en": {
+    "file": "03_Baskets_01_basket-and-benchmark-start-100_en.png",
+    "title": "Basket and benchmark (start = 100)",
+    "caption": "22 Nov 2021 – 20 Nov 2026 · Basket and benchmark (start = 100) · ref. BIST 100 (price) · USD, daily · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "03_Baskets_01_sepet-ve-benchmark-baslangic-100_tr.png",
+    "title": "Sepet ve benchmark (başlangıç = 100)",
+    "caption": "22 Kas 2021 – 20 Kas 2026 · Sepet ve benchmark (başlangıç = 100) · referans BIST 100 (fiyat) · USD, günlük · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "03_Baskets/02",
+   "tab": "baskets",
+   "label": "real",
+   "en": {
+    "file": "03_Baskets_02_relative-performance-vs-bist-100-price_en.png",
+    "title": "Relative performance vs BIST 100 (price)",
+    "caption": "22 Nov 2021 – 20 Nov 2026 · Relative performance · ref. BIST 100 (price) · USD, daily · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "03_Baskets_02_goreli-performans-bist-100-fiyat-karsisinda_tr.png",
+    "title": "Göreli performans BIST 100 (fiyat) karşısında",
+    "caption": "22 Kas 2021 – 20 Kas 2026 · Göreli performans · referans BIST 100 (fiyat) · USD, günlük · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "04_Event_Window/01",
+   "tab": "events",
+   "label": "real",
+   "en": {
+    "file": "04_Event_Window_01_cumulative-return-vs-eems-msci-em-small-cap_en.png",
+    "title": "Cumulative return vs EEMS · MSCI EM Small Cap",
+    "caption": "t = 27 Feb 2026, t−90 … t+90 · Cumulative return · ref. EEMS · MSCI EM Small Cap · real TRY, daily · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "04_Event_Window_01_birikimli-getiri-eems-msci-em-small-cap-karsisinda_tr.png",
+    "title": "Birikimli getiri EEMS · MSCI EM Small Cap karşısında",
+    "caption": "t = 27 Şub 2026, t−90 … t+90 · Birikimli getiri · referans EEMS · MSCI EM Small Cap · reel TL, günlük · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "05_Cross_Market/01",
+   "tab": "cross",
+   "label": "real",
+   "en": {
+    "file": "05_Cross_Market_01_matrix-a-29-mar-2024-15-sep-2026_en.png",
+    "title": "Matrix A · 29 Mar 2024 – 15 Sep 2026",
+    "caption": "29 Mar 2024 – 15 Sep 2026 · correlation · USD, monthly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "05_Cross_Market_01_matris-a-29-mar-2024-15-eyl-2026_tr.png",
+    "title": "Matris A · 29 Mar 2024 – 15 Eyl 2026",
+    "caption": "29 Mar 2024 – 15 Eyl 2026 · korelasyon · USD, aylık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "05_Cross_Market/02",
+   "tab": "cross",
+   "label": "real",
+   "en": {
+    "file": "05_Cross_Market_02_matrix-b-1-jan-2020-1-mar-2024_en.png",
+    "title": "Matrix B · 1 Jan 2020 – 1 Mar 2024",
+    "caption": "1 Jan 2020 – 1 Mar 2024 · correlation · USD, monthly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "05_Cross_Market_02_matris-b-1-oca-2020-1-mar-2024_tr.png",
+    "title": "Matris B · 1 Oca 2020 – 1 Mar 2024",
+    "caption": "1 Oca 2020 – 1 Mar 2024 · korelasyon · USD, aylık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "05_Cross_Market/03",
+   "tab": "cross",
+   "label": "real",
+   "en": {
+    "file": "05_Cross_Market_03_valuation-across-markets-p-e_en.png",
+    "title": "Valuation across markets (P/E)",
+    "caption": "Jan 2010 – Oct 2026 · monthly reported P/E · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "05_Cross_Market_03_piyasalarin-degerlemesi-f-k_tr.png",
+    "title": "Piyasaların değerlemesi (F/K)",
+    "caption": "Oca 2010 – Eki 2026 · aylık raporlanan F/K · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "06_Divergence_Lab/01",
+   "tab": "lab",
+   "label": "real",
+   "en": {
+    "file": "06_Divergence_Lab_01_heatmap-excess-vs-benchmark_en.png",
+    "title": "Excess return vs BIST 30 (total return)",
+    "caption": "Dec 2021 – Nov 2026 * · excess return · ref. BIST 30 (total return) · USD, monthly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "06_Divergence_Lab_01_heatmap-excess-vs-benchmark_tr.png",
+    "title": "BIST 30'a (getiri) göre fazla getiri",
+    "caption": "Ara 2021 – Kas 2026 * · fazla getiri · referans BIST 30 (getiri) · USD, aylık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "06_Divergence_Lab/02",
+   "tab": "lab",
+   "label": "real",
+   "en": {
+    "file": "06_Divergence_Lab_02_liquidated-fund-basket-excess-vs-benchmark_en.png",
+    "title": "Liquidated-fund basket · Excess vs benchmark",
+    "caption": "31 Dec 2021 – 20 Nov 2026 · excess return · ref. BIST 30 (total return) · USD, monthly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "06_Divergence_Lab_02_tasfiye-fonu-sepeti-benchmark-a-gore-fazla_tr.png",
+    "title": "Tasfiye fonu sepeti · Benchmark'a göre fazla",
+    "caption": "31 Ara 2021 – 20 Kas 2026 · fazla getiri · referans BIST 30 (getiri) · USD, aylık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "06_Divergence_Lab/03",
+   "tab": "lab",
+   "label": "real",
+   "en": {
+    "file": "06_Divergence_Lab_03_stocks-index_en.png",
+    "title": "Selected stocks (start = 100)",
+    "caption": "2 Jan 2025 – 20 Nov 2026 · index, start = 100 · TRY, daily · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "06_Divergence_Lab_03_stocks-index_tr.png",
+    "title": "Seçili hisseler (başlangıç = 100)",
+    "caption": "2 Oca 2025 – 20 Kas 2026 · endeks, başlangıç = 100 · TL, günlük · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "07_Funds/01",
+   "tab": "funds",
+   "label": "real",
+   "en": {
+    "file": "07_Funds_01_fund-groups-by-month_en.png",
+    "title": "Fund groups by month",
+    "caption": "Nov 2021 – Nov 2026 · investors · TRY, monthly · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "07_Funds_01_aylik-fon-gruplari_tr.png",
+    "title": "Aylık fon grupları",
+    "caption": "Kas 2021 – Kas 2026 · yatırımcı sayısı · TL, aylık · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  },
+  {
+   "id": "07_Funds/02",
+   "tab": "funds",
+   "label": "real",
+   "en": {
+    "file": "07_Funds_02_tly_en.png",
+    "title": "TLY unit price",
+    "caption": "22 Nov 2021 – 20 Nov 2026 · unit price · TRY, daily · Source: local v3 engine, database 2026-11-25"
+   },
+   "tr": {
+    "file": "07_Funds_02_tly_tr.png",
+    "title": "TLY birim fiyatı",
+    "caption": "22 Kas 2021 – 20 Kas 2026 · birim fiyat · TL, günlük · Kaynak: yerel v3 motoru, veritabanı 2026-11-25"
+   }
+  }
+ ]
+}

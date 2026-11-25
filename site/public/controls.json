@@ -1,0 +1,195 @@
+{
+ "explorer": {
+  "series": [
+   "FUND_HIGH",
+   "FUND_LOW",
+   "EEMS",
+   "F_TLY",
+   "XUMAL.P",
+   "XU100.P"
+  ],
+  "bench": [
+   "XU030"
+  ],
+  "basis": "USD",
+  "freq": "W",
+  "from": "2021-01-02",
+  "to": "",
+  "window": 26,
+  "charts": [
+   "logdiv",
+   "rebased",
+   "cumret",
+   "rollcorr",
+   "rollbeta",
+   "drawdown",
+   "zscore",
+   "level",
+   "rollvol",
+   "change"
+  ],
+  "log": false,
+  "events": false,
+  "evCats": [
+   "regulatory",
+   "monetary"
+  ],
+  "overlays": [],
+  "focus": 0,
+  "showNotes": true
+ },
+ "baskets": {
+  "picks": [
+   "S:DSTKF",
+   "S:OZATD",
+   "S:KTLEV",
+   "S:KLRHO",
+   "S:HEDEF"
+  ],
+  "weighting": "equal",
+  "custom": {},
+  "rebalance": "daily",
+  "from": "2021-11-20",
+  "to": "",
+  "bench": [
+   "XU100.P"
+  ],
+  "basis": "USD",
+  "label": "Basket001",
+  "log": true
+ },
+ "events": {
+  "series": [
+   "FUND_HIGH",
+   "FUND_LOW",
+   "XU100"
+  ],
+  "bench": [
+   "EEMS"
+  ],
+  "basis": "REAL",
+  "a": "2026-02-27",
+  "b": "2025-04-22",
+  "compare": false,
+  "pre": 90,
+  "post": 90,
+  "est": 250,
+  "measure": "raw"
+ },
+ "cross": {
+  "ids": [
+   "FUND_HIGH",
+   "XU030",
+   "FUND_LOW",
+   "KAP_LIQ",
+   "KAP_CMP",
+   "EEMS",
+   "F_TLY",
+   "U:Basket001",
+   "XBANK.P"
+  ],
+  "basis": "USD",
+  "freq": "M",
+  "metric": "corr",
+  "diff": false,
+  "labels": true,
+  "a": {
+   "from": "2024-03-29",
+   "to": "2026-09-15"
+  },
+  "b": {
+   "from": "2020-01-01",
+   "to": "2024-03-01"
+  },
+  "pe": [
+   "TR",
+   "WORLD",
+   "US",
+   "EUROPE",
+   "BR",
+   "IN",
+   "CN"
+  ],
+  "peMeasure": "pe",
+  "peFrom": "2010-01"
+ },
+ "lab": {
+  "tab": "heat",
+  "ids": [
+   "FUND_HIGH",
+   "F_TLY",
+   "KAP_LIQ",
+   "XHARZ.P",
+   "FUND_LOW",
+   "KAP_CMP",
+   "XU100.P",
+   "XU030.P",
+   "XUHIZ.P",
+   "XUMAL.P",
+   "XUSIN.P",
+   "XUTUM.P",
+   "EEMS",
+   "URTH",
+   "ITKY.L"
+  ],
+  "bench": [
+   "XU030"
+  ],
+  "basis": "USD",
+  "freq": "M",
+  "measure": "excess",
+  "win": 13,
+  "from": "2021-11-20",
+  "to": "",
+  "labels": false,
+  "focus": "FUND_HIGH",
+  "order": "manual",
+  "stocks": [
+   "S:ANELE",
+   "S:BIGEN",
+   "S:DSTKF",
+   "S:IEYHO",
+   "S:KARCL",
+   "S:OZATD",
+   "S:PEKGY",
+   "S:TEHOL",
+   "S:TERA",
+   "S:TRHOL",
+   "S:ASELS",
+   "S:QNBTR",
+   "S:TUPRS",
+   "S:ENPRA",
+   "S:GARAN",
+   "S:KCHOL",
+   "S:ENKAI",
+   "S:BIMAS",
+   "S:KTLEV"
+  ],
+  "sMetric": "index",
+  "sLog": true,
+  "sFreq": "D",
+  "sFrom": "2025-01-02",
+  "sTo": "",
+  "sBasis": "TRY"
+ },
+ "funds": {
+  "metric": "investors",
+  "fund": "TLY",
+  "fMetric": "price",
+  "kFund": "TLY",
+  "kPeriod": "2026-08"
+ },
+ "userBaskets": [
+  {
+   "id": "U:Basket001",
+   "label": "Basket001",
+   "members": [
+    "DSTKF",
+    "OZATD",
+    "KTLEV",
+    "KLRHO",
+    "HEDEF"
+   ]
+  }
+ ]
+}
