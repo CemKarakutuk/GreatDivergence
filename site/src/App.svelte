@@ -2,6 +2,10 @@
   // Public site: texts, methodology and demo PNGs exported from the local version. It computes nothing.
   import { TEXT, type Lang } from './text'
   import Controls, { type Catalog } from './Controls.svelte'
+  import katex from 'katex'
+  import 'katex/dist/katex.min.css'
+  import { FORMULAS, TEX } from './formulas'
+  const tex = TEX.map(t => katex.renderToString(t, { displayMode: true, throwOnError: false, output: 'html' }))
 
   const PAGES = ['overview', 'explorer', 'baskets', 'events', 'cross', 'lab', 'funds', 'methods'] as const
   type Page = typeof PAGES[number]
@@ -30,8 +34,8 @@
   fetch('./catalog.json').then(r => (r.ok ? r.json() : null)).then(x => (cat = x)).catch(() => {})
   fetch('./controls.json').then(r => (r.ok ? r.json() : {})).then(x => (ctl = x)).catch(() => {})
 
-  // page scale ≈ 150 % (three zoom steps in Safari); on narrower windows less, so the layout keeps at least ~900 px
-  const scale = () => { const z = Math.min(1.5, Math.max(1, innerWidth / 900)); document.documentElement.style.zoom = String(z); document.documentElement.style.setProperty('--z', String(z)) }
+  // page scale ≈ 125 % (two zoom steps in Safari); on narrower windows less, so the layout keeps at least ~900 px
+  const scale = () => { const z = Math.min(1.25, Math.max(1, innerWidth / 900)); document.documentElement.style.zoom = String(z); document.documentElement.style.setProperty('--z', String(z)) }
   scale(); addEventListener('resize', scale)
 
   let big = $state<Item | null>(null), full = $state(false)
@@ -107,6 +111,12 @@
       {#each T.baskets as b}<p>{b}</p>{/each}
     </section>
     <section class="card">
+      <h2>{FORMULAS[lang].title}</h2>
+      {#each FORMULAS[lang].items as f, i}
+        <div class="f"><h3>{f.h}</h3><div class="tex">{@html tex[i]}</div><p class="desc">{f.d}</p></div>
+      {/each}
+    </section>
+    <section class="card">
       <h2>{T.rulesTitle}</h2>
       <ul>{#each T.rules as r}<li>{r}</li>{/each}</ul>
     </section>
@@ -157,6 +167,9 @@
   ul { padding-left: 18px; } li { margin: 5px 0; }
   tr.sub td:first-child { padding-left: 18px; color: var(--text-2); }
   td.nw { white-space: nowrap; }
+  .f { border-bottom: 1px solid var(--line); padding: 4px 0 8px; }
+  .f:last-child { border-bottom: 0; }
+  .tex { overflow-x: auto; overflow-y: hidden; }
   .gallery { display: grid; grid-template-columns: 1fr; gap: 14px; }
   /* layout follows the scaled page width (container queries), as with browser zoom */
   .app { container: app / inline-size; }

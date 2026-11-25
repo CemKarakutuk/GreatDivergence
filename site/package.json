@@ -4,12 +4,19 @@
   "private": true,
   "type": "module",
   "description": "Static public site of Great Divergence v3: research texts, methodology and demo PNGs exported from the local version. No data.",
-  "scripts": { "dev": "vite", "build": "vite build", "check": "svelte-check --tsconfig ./tsconfig.json" },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
+  },
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "7.3.1",
     "svelte": "5.57.3",
     "svelte-check": "4.7.8",
     "typescript": "6.0.3",
     "vite": "8.3.6"
+  },
+  "dependencies": {
+    "katex": "0.16.22"
   }
 }
